@@ -1,0 +1,48 @@
+<html>
+
+<head>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/scripts.js"></script>
+</head>
+
+<body>
+<form id="form1" action="send.php" method="POST" style="display: block; width: 250px; margin: 0 auto; text-align: center;">
+
+<label for="email" style="width: 250px">EMAIL</label><br>
+<input type="text" name="email" id="email" style="width: 250px; margin-bottom: 15px;"><br>
+
+<label for="rss" style="width: 250px">RSS</label><br>
+<input name="rss" style="width: 250px; margin-bottom: 15px;resize: none;" id="rss"><br>
+
+<label for="debug" style="width: 250px">Debug</label><br>
+<textarea id="debug" readonly rows="5" cols="60" name="debug" style="width: 250px; margin-bottom: 15px;resize: none;"></textarea><br>
+
+<label for="rsslist" style="width: 250px">RSS list</label><br>
+<textarea id="rsslist" readonly rows="5" cols="60" name="rsslist" style="width: 250px; margin-bottom: 15px;resize: none;"></textarea><br>
+<div id="response"></div>
+<input id="save-button" type="submit" class="button" formaction="save.php" 	style="width: 100px; float:left" value="SAVE" >
+<input id="get-button" type="submit" class="button" formaction="get.php" 	style="width: 45px;"				value="GET" />
+<input id="send-button" type="submit" class="button" formaction="send.php"	style="width: 100px; float:right"	value="SEND" />
+<!--
+<button form="form1" type="button" style="width: 45px;">GET</button>
+<button form="form1" type="button" style="width: 100px; float:right">SEND</button>
+-->
+<!--
+<button type="button" style="width: 120px; float:left">SAVE</button>
+<input type="submit" style="width: 120px; float:right" value="SEND">
+-->
+
+</form>
+
+
+</body>
+</html>
+
+<!--
+Save ma zapisywac podany rss do danego identyfikatora (email) w bazie
+
+Send ma generowac i wysylac email zawierajacy rssy zapisane dla danego maila
+
+
+ -->
+
